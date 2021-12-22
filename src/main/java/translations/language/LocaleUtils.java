@@ -24,7 +24,7 @@ public class LocaleUtils {
         if (language != null) {
             if (language.isPT_BR()) return "pt";
             if (language.isEN_US()) return "en";
-            if (language.isEN()) return "en";
+            if (language.isEN()) return null;
         }
         return null;
     }
@@ -35,14 +35,14 @@ public class LocaleUtils {
         if (language != null) {
             if (language.isPT_BR()) return "br";
             if (language.isEN_US()) return "us";
-            if (language.isEN()) return "en";
+            if (language.isEN()) return null;
         }
         return null;
     }
 
     public static Locale getByCode(String code) {
-        if (code == "pt-br") return new Locale("pt", "BR");
-        if (code == "en-us") return Locale.ENGLISH;
+        if (code == "pt_BR") return new Locale("pt", "BR");
+        if (code == "en_US") return Locale.ENGLISH;
 
         return null;
     }
