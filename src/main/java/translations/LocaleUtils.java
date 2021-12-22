@@ -16,18 +16,22 @@ public class LocaleUtils {
     public static String getStringLanguage() {
         Language language = I18nConfig.getLanguage();
 
-        if (language.isPT_BR()) return "pt";
-        if (language.isEN_US()) return "en";
-        if (language.isEN()) return "en";
+        if (language != null) {
+            if (language.isPT_BR()) return "pt";
+            if (language.isEN_US()) return "en";
+            if (language.isEN()) return "en";
+        }
         return null;
     }
 
     public static String getCurrentCountry() {
         Language language = I18nConfig.getLanguage();
 
-        if (language.isPT_BR()) return "br";
-        if (language.isEN_US()) return "us";
-        if (language.isEN()) return "en";
+        if (language != null) {
+            if (language.isPT_BR()) return "br";
+            if (language.isEN_US()) return "us";
+            if (language.isEN()) return "en";
+        }
         return null;
     }
 }
