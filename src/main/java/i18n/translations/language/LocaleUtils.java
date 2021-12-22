@@ -1,6 +1,6 @@
-package translations.language;
+package i18n.translations.language;
 
-import translations.I18nConfig;
+import i18n.translations.I18nConfig;
 
 import java.util.Locale;
 

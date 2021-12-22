@@ -1,7 +1,6 @@
-package translations.language.find;
+package i18n.translations.language.find;
 
-import translations.language.Language;
-import translations.language.SessionAttributeLanguageFinder;
+import i18n.translations.language.SessionAttributeLanguageFinder;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;

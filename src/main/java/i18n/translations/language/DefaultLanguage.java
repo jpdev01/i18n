@@ -1,4 +1,4 @@
-package translations.language;
+package i18n.translations.language;
 
 import java.util.Locale;
 

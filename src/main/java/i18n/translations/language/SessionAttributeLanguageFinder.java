@@ -1,4 +1,4 @@
-package translations.language;
+package i18n.translations.language;
 
 import javax.servlet.http.HttpSession;
 import java.util.Locale;

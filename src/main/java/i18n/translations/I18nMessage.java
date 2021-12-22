@@ -1,6 +1,6 @@
-package translations;
+package i18n.translations;
 
-import translations.language.LocaleUtils;
+import i18n.translations.language.LocaleUtils;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

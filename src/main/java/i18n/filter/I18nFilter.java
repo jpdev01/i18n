@@ -1,7 +1,7 @@
-package filter;
+package i18n.filter;
 
-import translations.I18nConfig;
-import translations.language.SessionAttributeLanguageFinder;
+import i18n.translations.I18nConfig;
+import i18n.translations.language.SessionAttributeLanguageFinder;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

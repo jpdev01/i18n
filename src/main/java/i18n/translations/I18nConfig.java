@@ -1,6 +1,6 @@
-package translations;
+package i18n.translations;
 
-import translations.language.Language;
+import i18n.translations.language.Language;
 import javax.servlet.http.HttpServletRequest;
 
 import java.util.Locale;
