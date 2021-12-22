@@ -8,10 +8,6 @@ public class I18nConfig {
 
     private static Language language;
 
-    public static Locale getCurrentLocale(){
-        return LocaleUtils.getCurrentLocale();
-    }
-
     public static Language getLanguage() {
         return language;
     }
