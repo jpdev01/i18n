@@ -18,7 +18,7 @@
 </dependency>
 ```
 
-#### Como usar a `<version>` mais atualizada:
+### Como usar a `<version>` mais atualizada:
 Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o repositório do jitpack</a>
 
 
