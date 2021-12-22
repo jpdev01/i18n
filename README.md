@@ -1,4 +1,4 @@
-# Projeto de internacionalização i18n 
+# Projeto de internacionalização i18n (ainda em dev)
 
 ### Para adicionar essa biblioteca ao seu projeto, basta adicionar ao `pom.xml`:
 ```
@@ -26,6 +26,6 @@ Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o 
 `I18nMessage.getString(${code}, ${locale})`
 <br>
 
-Futuras features: <br>
+### :hammer: Futuras features: <br>
 1- Verificar se é possível o projeto i18n decidir o locale a ser usado. O problema é que ele não tem dependencia ao outro projeto. <br>
 2- Adicionar idioma espanhol
