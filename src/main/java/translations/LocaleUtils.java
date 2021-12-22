@@ -8,7 +8,7 @@ public class LocaleUtils {
         String language = getStringLanguage();
         String country = getCurrentCountry();
         if (language != null && country != null) {
-            return new Locale(getStringLanguage(), getCurrentCountry());
+            return new Locale(language, country);
         }
         return I18nConfig.DEFAULT_LOCALE;
     }
