@@ -28,4 +28,5 @@ Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o 
 
 ### :hammer: Futuras features: <br>
 1- Verificar se é possível o projeto i18n decidir o locale a ser usado. O problema é que ele não tem dependencia ao outro projeto. <br>
-2- Adicionar idioma espanhol
+2- Adicionar idioma espanhol <br>
+3 - Quando nao tiver aquela traducao, trazer o code.
