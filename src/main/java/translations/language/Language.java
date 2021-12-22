@@ -1,4 +1,4 @@
-package translations;
+package translations.language;
 
 public enum Language {
     PR_BR, EN_US, EN;

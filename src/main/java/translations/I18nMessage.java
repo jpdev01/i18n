@@ -1,5 +1,7 @@
 package translations;
 
+import translations.language.LocaleUtils;
+
 import java.util.Locale;
 import java.util.ResourceBundle;
 
