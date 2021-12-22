@@ -8,6 +8,16 @@
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
+      <option name="name" value="default-maven-virtual" />
+      <option name="url" value="https://i18n.jfrog.io/artifactory/default-maven-virtual" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="default-maven-virtual" />
+      <option name="url" value="https://i18n.jfrog.io/artifactory/default-maven-virtual" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
