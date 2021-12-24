@@ -13,27 +13,19 @@ public class I18nConfig {
 
     public static final Locale DEFAULT_LOCALE = new Locale("pt", "BR");
 
-    private static Language language;
+    public static final Language DEFAULT_LANGUAGE = Language.PT_BR;
 
-    private static Locale locale;
+    private static Language language;
 
     public static Language getLanguage() {
         return language;
     }
 
-    public void setLanguage(Language language) {
-        this.language = language;
+    public static void setLanguage(Language language) {
+        I18nConfig.language = language;
     }
 
-    public static Locale getLocale() {
-        return locale;
-    }
-
-    public static void setLocale(Locale locale) {
-        I18nConfig.locale = locale;
-    }
-
-    public static void removeLocale() {
-        I18nConfig.locale = null;
+    public static void removeLanguage() {
+        I18nConfig.language = null;
     }
 }

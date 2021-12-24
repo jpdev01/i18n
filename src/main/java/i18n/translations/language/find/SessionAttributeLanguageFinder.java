@@ -1,6 +1,7 @@
 package i18n.translations.language.find;
 
 import i18n.translations.language.DefaultLanguage;
+import i18n.translations.language.Language;
 import i18n.translations.language.LocaleUtils;
 
 import javax.servlet.http.HttpSession;
@@ -14,12 +15,12 @@ final public class SessionAttributeLanguageFinder {
         this.session = session;
     }
 
-    public Locale findLanguage() {
+    public Language findLanguage() {
         Object attribute = session.getAttribute("i18n_lang");
         if ((attribute == null) || !String.class.isAssignableFrom(attribute.getClass())) {
             return null;
         }
-        return new DefaultLanguage(LocaleUtils.getByCode(String.class.cast(attribute))).getLocale();
+        return new DefaultLanguage(LocaleUtils.getByCode(String.class.cast(attribute))).getLanguage();
     }
 
 }

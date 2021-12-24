@@ -1,6 +1,8 @@
 # Projeto de internacionalização i18n (ainda em dev)
 
-### Para adicionar essa biblioteca ao seu projeto, basta adicionar ao `pom.xml`:
+### Para adicionar essa biblioteca ao seu projeto:
+
+1- basta adicionar ao `pom.xml`:
 ```
 <repositories>
 	<repository>
@@ -16,6 +18,35 @@
 	<artifactId>i18n</artifactId>
 	<version>77440832de</version>
 </dependency>
+```
+
+2- Caso queira passar a language por sessão:
+
+Configure os dois filtros, um para salvar a language, outro para usa-la.
+```
+@Configuration
+public class I18nConfig {
+
+    @Bean
+    public FilterRegistrationBean internalFilter() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new I18nFilterConfigImpl());
+        registration.addUrlPatterns("/*");
+        registration.setName("i18nInternalFilter");
+        registration.setOrder(1);
+        return registration;
+    }
+
+    @Bean
+    public FilterRegistrationBean dependencyFilter() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new I18nFilter());
+        registration.addUrlPatterns("/*");
+        registration.setName("i18nFilter");
+        registration.setOrder(2);
+        return registration;
+    }
+}
 ```
 
 ### Como usar a `<version>` mais atualizada:

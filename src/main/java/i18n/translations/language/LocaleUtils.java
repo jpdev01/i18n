@@ -7,9 +7,6 @@ import java.util.Locale;
 public class LocaleUtils {
 
     public static Locale getCurrentLocale() {
-        Locale locale = I18nConfig.getLocale();
-        if (locale != null) return locale;
-
         String language = getStringLanguage();
         String country = getCurrentCountry();
 
@@ -40,9 +37,9 @@ public class LocaleUtils {
         return null;
     }
 
-    public static Locale getByCode(String code) {
-        if (code == "pt_BR") return new Locale("pt", "BR");
-        if (code == "en_US") return Locale.ENGLISH;
+    public static Language getByCode(String code) {
+        if (code == "pt_BR") return Language.PT_BR;
+        if (code == "en_US") return Language.EN_US;
 
         return null;
     }

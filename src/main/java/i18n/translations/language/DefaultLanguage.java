@@ -1,24 +1,18 @@
 package i18n.translations.language;
 
-import java.util.Locale;
-
 public class DefaultLanguage {
 
-    private Locale locale;
+    private final Language language;
 
-    public DefaultLanguage(final Locale locale) {
-        this.locale = locale;
+    public DefaultLanguage(final Language language) {
+        this.language = language;
     }
 
     public DefaultLanguage(String code) {
-        this.locale = LocaleUtils.getByCode(code);
+        this.language = LocaleUtils.getByCode(code);
     }
 
-    public Locale getLocale() {
-        return locale;
-    }
-
-    public void setLocale(Locale locale) {
-        this.locale = locale;
+    public Language getLanguage() {
+        return language;
     }
 }
