@@ -7,11 +7,7 @@ import javax.servlet.http.HttpSession;
 
 public abstract class I18nFilterConfig implements Filter {
 
-    private final HttpSession session;
-
-    public I18nFilterConfig(final HttpSession session){
-        this.session = session;
-    }
+    private HttpSession session;
 
     public void destroy() {
 
@@ -19,6 +15,10 @@ public abstract class I18nFilterConfig implements Filter {
 
     public void init(final FilterConfig filterConfig) throws ServletException {
 
+    }
+
+    protected void saveSession(final HttpSession httpSession) {
+        this.session = session;
     }
 
     protected void saveLanguage(Language language) {
