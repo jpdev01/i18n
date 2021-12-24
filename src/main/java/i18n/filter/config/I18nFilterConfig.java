@@ -18,7 +18,7 @@ public abstract class I18nFilterConfig implements Filter {
     }
 
     protected void saveSession(final HttpSession httpSession) {
-        this.session = session;
+        this.session = httpSession;
     }
 
     protected void saveLanguage(Language language) {
