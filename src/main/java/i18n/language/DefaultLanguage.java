@@ -1,4 +1,4 @@
-package i18n.translations.language;
+package i18n.language;
 
 public class DefaultLanguage {
 
@@ -8,7 +8,7 @@ public class DefaultLanguage {
         this.language = language;
     }
 
-    public DefaultLanguage(String code) {
+    public DefaultLanguage(final String code) {
         this.language = LocaleUtils.getByCode(code);
     }
 

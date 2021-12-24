@@ -1,15 +1,8 @@
-package i18n.translations;
-
-import i18n.translations.language.Language;
-import javax.servlet.http.HttpServletRequest;
+package i18n.language;
 
 import java.util.Locale;
 
 public class I18nConfig {
-
-    public static final Locale DEFAULT_LOCALE = new Locale("pt", "BR");
-
-    public static final Language DEFAULT_LANGUAGE = Language.PT_BR;
 
     private static Language language;
 

@@ -1,6 +1,4 @@
-package i18n.translations.language;
-
-import i18n.translations.I18nConfig;
+package i18n.language;
 
 import java.util.Locale;
 
@@ -12,7 +10,7 @@ public class LocaleUtils {
 
         if (language != null && country != null) return new Locale(language, country);
 
-        return I18nConfig.DEFAULT_LOCALE;
+        return null;
     }
 
     public static String getStringLanguage() {

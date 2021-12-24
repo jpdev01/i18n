@@ -1,4 +1,4 @@
-package i18n.translations.language;
+package i18n.language;
 
 public enum Language {
     PT_BR, EN_US, EN;

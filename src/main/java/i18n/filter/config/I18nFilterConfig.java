@@ -1,6 +1,6 @@
 package i18n.filter.config;
 
-import i18n.translations.language.Language;
+import i18n.language.Language;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpSession;

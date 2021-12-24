@@ -1,11 +1,10 @@
-package i18n.translations.language.find;
+package i18n.language.find;
 
-import i18n.translations.language.DefaultLanguage;
-import i18n.translations.language.Language;
-import i18n.translations.language.LocaleUtils;
+import i18n.language.DefaultLanguage;
+import i18n.language.Language;
+import i18n.language.LocaleUtils;
 
 import javax.servlet.http.HttpSession;
-import java.util.Locale;
 
 final public class SessionAttributeLanguageFinder {
 
