@@ -4,7 +4,6 @@ import i18n.translations.language.Language;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpSession;
-import java.util.logging.Filter;
 
 public abstract class I18nFilterConfig implements Filter {
 
