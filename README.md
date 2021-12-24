@@ -22,7 +22,19 @@
 
 2- Caso queira passar a language por sessão:
 
-Configure os dois filtros, um para salvar a language, outro para usa-la.
+2.1 - Configure seu filtro interno, onde será salvo em sessão o idioma do usuário:
+```
+public class I18nFilterConfigImpl extends I18nFilterConfig {
+
+    public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain chain) throws IOException, ServletException {
+        saveSession(((HttpServletRequest) request).getSession());
+        saveLanguage(Language.PT_BR);
+        chain.doFilter(request, response);
+    }
+
+}
+```
+2.2- Configure os dois filtros, um para salvar a language (seu/interno), outro para usa-la (da lib).
 ```
 @Configuration
 public class I18nConfig {
@@ -48,6 +60,12 @@ public class I18nConfig {
     }
 }
 ```
+### Para usar as traduções:
+`I18nMessage.getString(${code})`
+
+Ou ainda se quiser especificar/sobrepor o locale:
+`I18nMessage.getString(${code}, ${locale})`
+
 
 ### Como usar a `<version>` mais atualizada:
 Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o repositório do jitpack</a>
