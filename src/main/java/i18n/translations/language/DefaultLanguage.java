@@ -10,6 +10,10 @@ public class DefaultLanguage {
         this.locale = locale;
     }
 
+    public DefaultLanguage(String code) {
+        this.locale = LocaleUtils.getByCode(code);
+    }
+
     public Locale getLocale() {
         return locale;
     }

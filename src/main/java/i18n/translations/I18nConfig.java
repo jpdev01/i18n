@@ -32,4 +32,8 @@ public class I18nConfig {
     public static void setLocale(Locale locale) {
         I18nConfig.locale = locale;
     }
+
+    public static void removeLocale() {
+        I18nConfig.locale = null;
+    }
 }
