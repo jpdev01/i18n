@@ -17,10 +17,15 @@ final public class SessionAttributeLanguageFinder {
 
     public Language findLanguage() {
         Object attribute = session.getAttribute("i18n_lang");
-        if ((attribute == null) || !String.class.isAssignableFrom(attribute.getClass())) {
-            return null;
+        if (attribute == null) return null;
+
+        Language language = null;
+        if (String.class.isAssignableFrom(attribute.getClass())) {
+            language = LocaleUtils.getByCode(String.class.cast(attribute));
+        } else if (attribute instanceof Language) {
+            language = (Language) attribute;
         }
-        return new DefaultLanguage(LocaleUtils.getByCode(String.class.cast(attribute))).getLanguage();
+        return new DefaultLanguage(language).getLanguage();
     }
 
 }
