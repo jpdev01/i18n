@@ -1,4 +1,4 @@
-package i18n.translations.language.find;
+package i18n.filter.config;
 
 import i18n.translations.language.Language;
 
