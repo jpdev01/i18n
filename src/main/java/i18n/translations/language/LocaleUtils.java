@@ -21,7 +21,6 @@ public class LocaleUtils {
         if (language != null) {
             if (language.isPT_BR()) return "pt";
             if (language.isEN_US()) return "en";
-            if (language.isEN()) return null;
         }
         return null;
     }
@@ -32,7 +31,6 @@ public class LocaleUtils {
         if (language != null) {
             if (language.isPT_BR()) return "br";
             if (language.isEN_US()) return "us";
-            if (language.isEN()) return null;
         }
         return null;
     }
