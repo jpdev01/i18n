@@ -1,7 +1,5 @@
 package i18n.language;
 
-import java.util.Locale;
-
 public class I18nConfig {
 
     private static Language language;
