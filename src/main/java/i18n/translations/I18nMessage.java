@@ -4,6 +4,7 @@ import i18n.language.I18nConfig;
 import i18n.language.Language;
 import i18n.language.LocaleUtils;
 
+import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -11,20 +12,20 @@ public class I18nMessage {
 
     private static final String I18N_PREFIX = "i18n";
 
-    public static String getString(String message) {
+    public static String getString(String key) {
+        return getString(key, null);
+    }
+
+    public static String getString(String key, Object... params) {
+        return getString(key, I18nConfig.getLanguage(), params);
+    }
+
+    public static String getString(String key, Language language, Object... params) {
         try {
-            return I18nMessage.getBundle().getString(message);
+            return MessageFormat.format(I18nMessage.getBundle(LocaleUtils.getLocale(language)).getString(key), params);
         } catch (Exception e) {
-            return message;
+            return key;
         }
-    }
-
-    public static String getString(String message, Language language) {
-        return I18nMessage.getBundle(LocaleUtils.getLocale(language)).getString(message);
-    }
-
-    public static ResourceBundle getBundle() {
-        return getBundle(LocaleUtils.getLocale(I18nConfig.getLanguage()));
     }
 
     public static ResourceBundle getBundle(Locale locale) {

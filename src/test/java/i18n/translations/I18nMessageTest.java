@@ -20,4 +20,10 @@ public class I18nMessageTest {
         Assert.assertEquals("Teste", I18nMessage.getString("test"));
         Assert.assertEquals("Test", I18nMessage.getString("test", Language.EN_US));
     }
+
+    @Test
+    public void getStringWithParamsTest() {
+        Assert.assertEquals("Olá, João", I18nMessage.getString("testParams", "João"));
+        Assert.assertEquals("Hi, João", I18nMessage.getString("testParams", Language.EN_US, "João"));
+    }
 }
