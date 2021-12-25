@@ -3,7 +3,7 @@
 - [Adicionar dependência](#adicionar-dependencia)
 
 
-## Adicionar Dependencia
+## Adicionar Dependência
 #### 1- Adicionar ao `pom.xml`:
 ```
 <repositories>
