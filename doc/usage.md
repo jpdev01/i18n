@@ -1,9 +1,9 @@
 ## Como utilizar: 
 
-- [Adicionar dependência](#dependency)
+- [Adicionar dependência](#adicionar-dependencia)
 
 
-## dependency
+## Adicionar Dependencia
 #### 1- Adicionar ao `pom.xml`:
 ```
 <repositories>
