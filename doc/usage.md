@@ -1,10 +1,15 @@
 ## Como utilizar: 
 
 - [Adicionar dependência](#adicionar-dependencia)
+- [Criar filtro interno](#criar-filtro-interno)
+- [Ative os filtros](#ativar-filtros)
+- [Usar](#usar)
+- [Opcionais](#opcionais)
 
 
-## Adicionar Dependência
+## Adicionar Dependencia
 #### 1- Adicionar ao `pom.xml`:
+#### Como usar a `<version>` mais atualizada: Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o repositório do jitpack</a>
 ```
 <repositories>
 	<repository>
@@ -24,7 +29,8 @@
 
 #### 2- Caso queira passar a language por sessão:
 
-#### 2.1 - Configure seu filtro interno, onde será salvo em sessão o idioma do usuário:
+## - Criar filtro interno
+Configure seu filtro interno, onde será salvo em sessão o idioma do usuário:
 ```
 public class I18nFilterConfigImpl extends I18nFilterConfig {
 
@@ -36,7 +42,12 @@ public class I18nFilterConfigImpl extends I18nFilterConfig {
 
 }
 ```
-#### 2.2- Configure os dois filtros, um para salvar a language (seu/interno), outro para usa-la (da lib).
+## Ativar filtros
+Existe dois filtros:
+- Interno: Onde você irá salvar o idioma.
+- I18n: Será usado para captar o idioma.
+
+Caso esteja usando spring-boot:
 ```
 @Configuration
 public class I18nConfig {
@@ -62,11 +73,17 @@ public class I18nConfig {
     }
 }
 ```
-### Para usar as traduções:
+
+## Usar
+#### Para usar as traduções:
 `I18nMessage.getString(${code})`
 
-Ou ainda se quiser especificar/sobrepor o locale:
+#### Ou ainda se quiser especificar/sobrepor o locale:
 `I18nMessage.getString(${code}, ${locale})`
+
+## Opcionais
+### Para usar as traduções:
+`I18nMessage.getString(${code})`
 
 ### Como usar a `<version>` mais atualizada:
 Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o repositório do jitpack</a>
