@@ -4,7 +4,6 @@
 - [Criar filtro interno](#criar-filtro-interno)
 - [Ative os filtros](#ativar-filtros)
 - [Usar](#usar)
-- [Opcionais](#opcionais)
 
 
 ## Adicionar Dependencia
@@ -80,10 +79,6 @@ public class I18nConfig {
 
 #### Ou ainda se quiser especificar/sobrepor o locale:
 `I18nMessage.getString(${code}, ${locale})`
-
-## Opcionais
-### Para usar as traduções:
-`I18nMessage.getString(${code})`
 
 ### Como usar a `<version>` mais atualizada:
 Acesse a url: <a href="https://jitpack.io/#jpdev01/i18n/-SNAPSHOT"> Link para o repositório do jitpack</a>
