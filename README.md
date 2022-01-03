@@ -8,6 +8,6 @@ Projeto tem objetivo de servir a internacionalização podendo ser usado como li
 
 
 ### :hammer: Futuras features: <br>
-1- Usar traduções da AWS ou Google Translate
+1- Usar traduções da AWS ou Google Translate <br>
 2- Adicionar idioma espanhol <br>
 3- Permitir personalização.
